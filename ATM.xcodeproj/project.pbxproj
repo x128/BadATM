@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		205A26F82922238400F0867E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A26F72922238400F0867E /* AppDelegate.swift */; };
-		205A26FA2922238400F0867E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A26F92922238400F0867E /* SceneDelegate.swift */; };
 		205A26FC2922238400F0867E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A26FB2922238400F0867E /* ViewController.swift */; };
 		205A26FF2922238400F0867E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205A26FD2922238400F0867E /* Main.storyboard */; };
 		205A27012922238900F0867E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 205A27002922238900F0867E /* Assets.xcassets */; };
 		205A27042922238900F0867E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 205A27022922238900F0867E /* LaunchScreen.storyboard */; };
-		205A270F2922238900F0867E /* ATMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A270E2922238900F0867E /* ATMTests.swift */; };
 		205A27192922238900F0867E /* ATMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A27182922238900F0867E /* ATMUITests.swift */; };
 		205A271B2922238900F0867E /* ATMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A271A2922238900F0867E /* ATMUITestsLaunchTests.swift */; };
+		205A27282922288E00F0867E /* NetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A27272922288E00F0867E /* NetService.swift */; };
+		205A272A29223D0400F0867E /* RateInterestCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A272929223D0400F0867E /* RateInterestCalculator.swift */; };
+		205A272C2922411800F0867E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205A272B2922411800F0867E /* Repository.swift */; };
+		207E64EE292279A9006A246A /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E64ED292279A9006A246A /* RepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +40,19 @@
 /* Begin PBXFileReference section */
 		205A26F42922238400F0867E /* ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A26F72922238400F0867E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		205A26F92922238400F0867E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		205A26FB2922238400F0867E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		205A26FE2922238400F0867E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		205A27002922238900F0867E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		205A27032922238900F0867E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		205A27052922238900F0867E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		205A270A2922238900F0867E /* ATMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		205A270E2922238900F0867E /* ATMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMTests.swift; sourceTree = "<group>"; };
 		205A27142922238900F0867E /* ATMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		205A27182922238900F0867E /* ATMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMUITests.swift; sourceTree = "<group>"; };
 		205A271A2922238900F0867E /* ATMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		205A27272922288E00F0867E /* NetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetService.swift; sourceTree = "<group>"; };
+		205A272929223D0400F0867E /* RateInterestCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateInterestCalculator.swift; sourceTree = "<group>"; };
+		205A272B2922411800F0867E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		207E64ED292279A9006A246A /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				205A26F72922238400F0867E /* AppDelegate.swift */,
-				205A26F92922238400F0867E /* SceneDelegate.swift */,
 				205A26FB2922238400F0867E /* ViewController.swift */,
+				205A272B2922411800F0867E /* Repository.swift */,
+				205A27272922288E00F0867E /* NetService.swift */,
+				205A272929223D0400F0867E /* RateInterestCalculator.swift */,
 				205A26FD2922238400F0867E /* Main.storyboard */,
 				205A27002922238900F0867E /* Assets.xcassets */,
 				205A27022922238900F0867E /* LaunchScreen.storyboard */,
@@ -113,7 +119,7 @@
 		205A270D2922238900F0867E /* ATMTests */ = {
 			isa = PBXGroup;
 			children = (
-				205A270E2922238900F0867E /* ATMTests.swift */,
+				207E64ED292279A9006A246A /* RepositoryTests.swift */,
 			);
 			path = ATMTests;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			files = (
 				205A26FC2922238400F0867E /* ViewController.swift in Sources */,
 				205A26F82922238400F0867E /* AppDelegate.swift in Sources */,
-				205A26FA2922238400F0867E /* SceneDelegate.swift in Sources */,
+				205A272C2922411800F0867E /* Repository.swift in Sources */,
+				205A27282922288E00F0867E /* NetService.swift in Sources */,
+				205A272A29223D0400F0867E /* RateInterestCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205A270F2922238900F0867E /* ATMTests.swift in Sources */,
+				207E64EE292279A9006A246A /* RepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
